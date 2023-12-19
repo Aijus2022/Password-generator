@@ -7,27 +7,9 @@
   <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
 <body>
+ <body>
   <h1>Password Generator</h1>
-  
-  <form id="passwordForm">
-    <label for="passwordLength">Password Length (8-128 characters):</label>
-    <input type="number" id="passwordLength" name="passwordLength" min="8" max="128" required>
-
-    <label>Character Types:</label>
-    <input type="checkbox" id="lowercase" name="characterType" checked>
-    <label for="lowercase">Lowercase</label>
-
-    <input type="checkbox" id="uppercase" name="characterType" checked>
-    <label for="uppercase">Uppercase</label>
-
-    <input type="checkbox" id="numeric" name="characterType" checked>
-    <label for="numeric">Numeric</label>
-
-    <input type="checkbox" id="special" name="characterType" checked>
-    <label for="special">Special</label>
-
-    <button type="button" onclick="generatePassword()">Generate Password</button>
-  </form>
+  <button onclick="generatePassword()">Generate Password</button>
   <script src="script.js"></script> 
 </body>
 </html>
