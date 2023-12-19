@@ -44,3 +44,61 @@
       // Display password
       alert("Generated Password:\n" + password);
     }
+// Creating a style element
+var style = document.createElement('style');
+
+// Adding CSS rules
+style.textContent = `
+  body {
+    background-color: #001f3f; /* Dark blue background */
+    color: #ffffff; /* White text */
+    font-family: 'Arial', sans-serif;
+  }
+
+  h1, form {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  /* Box styling */
+  form {
+    background-color: #ffffff; /* White background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.2); /* Light blue box shadow */
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+  }
+
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+
+  button {
+    background-color: #0074cc; /* Darker light blue */
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #005a99; /* Light blue on hover */
+  }
+
+
+// Appending the style element to the document head
+document.head.appendChild(style)
