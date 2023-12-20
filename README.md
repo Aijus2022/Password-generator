@@ -1,6 +1,8 @@
 # Password Generator
+https://aijus2022.github.io/Password-generator/
 
 A simple web application that generates random passwords based on user criteria.
+
 
 ## Overview
 
@@ -34,3 +36,5 @@ Feel free to customize the app, add more features, or enhance the user interface
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
+
