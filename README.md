@@ -8,7 +8,7 @@ This web app allows users to generate a random password by specifying the length
 
 ## Instructions
 
-1. Open the HTML file (`index.html`) in a web browser.
+1. Open the HTML file (https://github.com/Aijus2022/Password-generator/blob/main/index.html) in a web browser.
 2. Enter the desired password length (between 8 and 128 characters) in the input field.
 3. Check the character types you want to include in the password (lowercase, uppercase, numeric, special characters).
 4. Click the "Generate Password" button.
