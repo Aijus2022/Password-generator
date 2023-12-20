@@ -34,7 +34,8 @@ This web app allows users to generate a random password by specifying the length
 
 Feel free to customize the app, add more features, or enhance the user interface based on your preferences. The provided code is a starting point, and you can build upon it to suit your needs.
 
-## License
+## License![298A4D79-1B39-4C4B-BAE2-8862A538B276](https://github.com/Aijus2022/Password-generator/assets/109210016/cad21289-9515-4319-9759-6e22db1f83a8)
+
 
 This project is licensed under the [MIT License](LICENSE).
 
