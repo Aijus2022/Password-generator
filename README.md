@@ -1,3 +1,4 @@
+![76C36C12-6F1F-4559-B61F-A05A6E5CF502](https://github.com/Aijus2022/Password-generator/assets/109210016/ed4328bd-34db-4f60-81b5-687a09868ef8)
 # Password Generator
 https://aijus2022.github.io/Password-generator/
 
