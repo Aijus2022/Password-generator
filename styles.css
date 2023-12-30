@@ -1,13 +1,36 @@
-/* Existing styles remain unchanged */
-
-/* Additional styles for password display */
-#password-display {
-  margin-top: 20px;
-  font-size: 1.2em;
-  color: #2ecc71; /* Change color to suit your design */
+body {
+  margin: 0;
 }
 
-/* Adjust button styles for better placement */
+.mirror-background {
+  background: linear-gradient(to bottom right, rgba(52, 73, 94, 1), rgba(44, 62, 80, 1));
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background: linear-gradient(to bottom right, rgba(52, 73, 94, 0.8), rgba(44, 62, 80, 0.8));
+  padding: 20px;
+  border-radius: 20px;
+  border: 3px solid transparent;
+  background-clip: padding-box;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.instructions-container {
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6));
+  color: #ecf0f1;
+  padding: 15px;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  margin: 20px 0;
+}
+
 button {
   background: linear-gradient(to bottom right, #3498db, #2980b9);
   color: #fff;
@@ -15,11 +38,37 @@ button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin-top: 20px; /* Adjust margin as needed */
+  margin-top: 20px;
   font-size: 1.2em;
   transition: background 0.3s;
 }
 
 button:hover {
   background: linear-gradient(to bottom right, #2980b9, #2070a0);
+}
+
+#password-display {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #2ecc71;
+}
+
+/* Styles for footer with neon border */
+footer {
+  text-align: center;
+  padding: 10px;
+}
+
+.neon-border {
+  border: 2px solid #0ff;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
+}
+
+.neon-border p {
+  margin: 0;
+  font-size: 0.8em;
+  color: #0ff;
+  text-shadow: 1px 1px 2px rgba(0, 255, 255, 0.7);
 }
