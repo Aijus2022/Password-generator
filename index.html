@@ -7,27 +7,34 @@
   <title>Password Generator</title>
 </head>
 <body>
-  <div class="container">
-    <h1>Password Generator</h1>
-    <div class="instructions-container">
-      <p>Welcome! Please choose a number between 8 and 128 and check all the boxes below to generate your password:</p>
+  <div class="mirror-background">
+    <div class="container">
+      <h1>Password Generator</h1>
+      <div class="instructions-container">
+        <p>Welcome! Please choose a number between 8 and 128 and check all the boxes below to generate your password:</p>
+      </div>
+      <form id="password-form">
+        <label for="password-length">Length of Password:</label>
+        <input type="number" id="password-length" min="8" max="128" placeholder="Enter length" required>
+
+        <label>Character Types:</label>
+        <label><input type="checkbox" id="lowercase"> Lowercase</label>
+        <label><input type="checkbox" id="uppercase"> Uppercase</label>
+        <label><input type="checkbox" id="numeric"> Numeric</label>
+        <label><input type="checkbox" id="special"> Special characters ($@%&*, etc.)</label>
+
+        <button type="button" onclick="generatePassword()">Generate Password</button>
+
+        <div id="password-display"></div>
+      </form>
     </div>
-    <form id="password-form">
-      <label for="password-length">Length of Password:</label>
-      <input type="number" id="password-length" min="8" max="128" placeholder="Enter length" required>
-
-      <label>Character Types:</label>
-      <label><input type="checkbox" id="lowercase"> Lowercase</label>
-      <label><input type="checkbox" id="uppercase"> Uppercase</label>
-      <label><input type="checkbox" id="numeric"> Numeric</label>
-      <label><input type="checkbox" id="special"> Special characters ($@%&*, etc.)</label>
-
-      <button type="button" onclick="generatePassword()">Generate Password</button>
-
-      <div id="password-display"></div>
-    </form>
   </div>
+
+  <footer class="neon-border">
+    <p>MIT License © 2023 Your Name</p>
+  </footer>
 
   <script src="script.js" defer></script>
 </body>
 </html>
+
