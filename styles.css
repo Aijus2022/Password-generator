@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-  background: linear-gradient(to bottom right, rgba(52, 73, 94, 0.8), rgba(44, 62, 80, 0.8));
+  background: linear-gradient(to bottom right, rgba(52, 173, 94, 0.8), rgba(44, 62, 180, 0.8));
   padding: 20px;
   border-radius: 20px;
   border: 3px solid transparent;
