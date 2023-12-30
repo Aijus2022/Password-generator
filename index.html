@@ -3,13 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Password Generator</title> 
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  </head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Password Generator</title>
+</head>
 <body>
- <body>
-  <h1>Password Generator</h1>
-  <button onclick="generatePassword()">Generate Password</button>
-  <script src="script.js"></script> 
+  <div class="container">
+    <h1>Password Generator</h1>
+    <div class="instructions-container">
+      <p>Welcome! Please choose a number between 8 and 128 and check all the boxes below to generate your password:</p>
+    </div>
+    <form id="password-form">
+      <label for="password-length">Length of Password:</label>
+      <input type="number" id="password-length" min="8" max="128" placeholder="Enter length" required>
+
+      <label>Character Types:</label>
+      <label><input type="checkbox" id="lowercase"> Lowercase</label>
+      <label><input type="checkbox" id="uppercase"> Uppercase</label>
+      <label><input type="checkbox" id="numeric"> Numeric</label>
+      <label><input type="checkbox" id="special"> Special characters ($@%&*, etc.)</label>
+
+      <button type="button" onclick="generatePassword()">Generate Password</button>
+
+      <div id="password-display"></div>
+    </form>
+  </div>
+
+  <script src="script.js" defer></script>
 </body>
 </html>
