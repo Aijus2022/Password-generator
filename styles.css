@@ -57,6 +57,8 @@ button:hover {
 footer {
   text-align: center;
   padding: 10px;
+  background:rgba(145,49,125,0.9);
+  color:#191970;
 }
 
 .neon-border {
