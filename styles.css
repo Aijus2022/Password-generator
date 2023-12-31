@@ -63,7 +63,7 @@ button {
   margin-top: 20px;
   max-height: 100px; /* Adjust the max-height as needed */
   overflow-y: auto;
-  overflow-x:scroll;
+  overflow-x: hidden; /* Add this line to hide horizontal overflow */
   padding: 10px;
   border: 1px solid #00ffcc;
   border-radius: 5px;
@@ -78,6 +78,7 @@ button {
 #password-display:hover {
   background-color: #f0f0f0; /* Highlight on hover for better UX */
 }
+
 
 
 
