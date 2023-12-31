@@ -59,25 +59,45 @@ button {
 }
 
 
+
+#password-form {
+  background: linear-gradient(to right, #001f3f, #00a38f); /* Royal navy to royal green gradient */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#password-length,
+#lowercase,
+#uppercase,
+#numeric,
+#special {
+  background: linear-gradient(to right, #001f3f, #00a38f); /* Royal navy to royal green gradient */
+  color: #fff; /* White text for visibility */
+  border: 1px solid #00ffcc;
+}
+
 #password-display-container {
   margin-top: 20px;
   max-height: 100px; /* Adjust the max-height as needed */
+  max-width: 100%; /* Prevent horizontal overflow */
   overflow-y: auto;
-  overflow-x: hidden; /* Add this line to hide horizontal overflow */
+  overflow-x: auto; /* Enable horizontal scrolling if necessary */
   padding: 10px;
   border: 1px solid #00ffcc;
   border-radius: 5px;
   cursor: pointer;
+  background: linear-gradient(to right, #001f3f, #00a38f); /* Royal navy to royal green gradient */
 }
 
 #password-display {
-  word-wrap: break-word;
-  color: #333;
+  white-space: nowrap; /* Prevent line breaks within the password */
+  color: #fff; /* White text for visibility */
 }
 
 #password-display:hover {
   background-color: #f0f0f0; /* Highlight on hover for better UX */
 }
+
 
 
 
