@@ -22,11 +22,17 @@
         <label><input type="checkbox" id="numeric"> Numeric</label>
         <label><input type="checkbox" id="special"> Special characters ($@%&*, etc.)</label>
 
-        <button type="button" onclick="generatePassword()">Generate Password</button>
-
+        <button type="button" onclick="generatePassword()"> Generate Password </button>
       
 <div id="password-display-container">
   <div id="password-display"></div>
+  <div id="password-display-container">
+      <div id="password-display" onclick="selectText(this)">
+        <!-- Your generated password content goes here -->
+        YourGeneratedPassword123
+      </div>
+    </div>
+    <button onclick="copyToClipboard()">Copy Password</button> 
 </div>
 
       </form>
