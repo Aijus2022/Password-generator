@@ -67,4 +67,46 @@ function generateRandomPassword(length, includeLowercase, includeUppercase, incl
 
   return password;
 }
+// Your existing JavaScript code
+
+// Function to select the text inside an element
+function selectText(element) {
+  var range, selection;
+
+  if (window.getSelection) {
+    selection = window.getSelection();
+    range = document.createRange();
+    range.selectNodeContents(element);
+    selection.removeAllRanges();
+    selection.addRange(range);
+  } else if (document.body.createTextRange) {
+    range = document.body.createTextRange();
+    range.moveToElementText(element);
+    range.select();
+  }
+}
+
+// Function to copy the selected text to the clipboard
+function copyToClipboard() {
+  var selectedText = window.getSelection().toString();
+  
+  if (selectedText) {
+    // Use the Clipboard API if available
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(selectedText);
+    } else {
+      // For older browsers, use document.execCommand('copy')
+      var tempInput = document.createElement('textarea');
+      tempInput.value = selectedText;
+      document.body.appendChild(tempInput);
+      tempInput.select();
+      document.execCommand('copy');
+      document.body.removeChild(tempInput);
+    }
+    
+    alert('Password copied to clipboard!');
+  } else {
+    alert('No password selected to copy.');
+  }
+}
 
