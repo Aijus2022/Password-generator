@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-   background: linear-gradient(45deg, #4e54c8, #8f94fb);
+  background: linear-gradient(45deg, #191970, #8f94fb);
   border: 2px solid #00ffcc;
   border-radius: 10px;
   padding: 20px;
@@ -27,7 +27,7 @@ h1 {
 }
 
 .instructions-container {
-  color: #333;
+  color: white;
   margin-bottom: 20px;
 }
 
