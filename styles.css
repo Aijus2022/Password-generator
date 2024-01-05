@@ -16,6 +16,10 @@ body {
   width: 80%;
   max-width: 400px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  justify-content:centre;
+  align-content:centre;
+  position:relative;
+  z-index:1;
 }
 
 h1 {
