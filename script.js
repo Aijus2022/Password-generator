@@ -88,25 +88,32 @@ function selectText(element) {
 
 // Function to copy the selected text to the clipboard
 function copyToClipboard() {
-  var selectedText = window.getSelection().toString();
-  
-  if (selectedText) {
-    // Use the Clipboard API if available
-    if (navigator.clipboard) {
-      navigator.clipboard.writeText(selectedText);
+  var passwordElement = document.getElementById('password-display'); // Change 'password-display' to the actual ID of your generated password element
+
+  if (passwordElement) {
+    var selectedText = passwordElement.innerText.trim();
+
+    if (selectedText) {
+      // Use the Clipboard API if available
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(selectedText);
+      } else {
+        // For older browsers, use document.execCommand('copy')
+        var tempInput = document.createElement('textarea');
+        tempInput.value = selectedText;
+        document.body.appendChild(tempInput);
+        tempInput.select();
+        document.execCommand('copy');
+        document.body.removeChild(tempInput);
+      }
+
+      alert('Password copied to clipboard!');
     } else {
-      // For older browsers, use document.execCommand('copy')
-      var tempInput = document.createElement('textarea');
-      tempInput.value = selectedText;
-      document.body.appendChild(tempInput);
-      tempInput.select();
-      document.execCommand('copy');
-      document.body.removeChild(tempInput);
+      alert('No password content to copy.');
     }
-    
-    alert('Password copied to clipboard!');
   } else {
-    alert('No password selected to copy.');
+    alert('Password element not found.');
   }
 }
+
 
