@@ -40,7 +40,7 @@ form {
 
 label {
   margin: 10px 0;
-  color: #333;
+  color: white;
 }
 
 input {
@@ -48,12 +48,12 @@ input {
   margin-bottom: 10px;
   border: 1px solid #00ffcc;
   border-radius: 5px;
-  color: #fff;
+  color: white;
 }
 
 button {
   background: linear-gradient(45deg, #4e54c8, #8f94fb);
-  color: #fff;
+  color: white;
   padding: 10px;
   border: none;
   border-radius: 5px;
@@ -74,7 +74,7 @@ button {
 #special {
   background: linear-gradient(to right, #001f3f, #00a38f);
   /* Royal navy to royal green gradient */
-  color: #fff;
+  color: white;
   /* White text for visibility */
   border: 1px solid #00ffcc;
 }
@@ -97,7 +97,7 @@ button {
 #password-display {
   white-space: nowrap;
   /* Prevent line breaks within the password */
-  color: #fff;
+  color:white;
   /* White text for visibility */
 }
 
